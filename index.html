@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ice cream</title>
+    <body>
+      <div class="wrapper">
+        <header id="open" class="header">
+          <div id="close" class="header__container container">
+            <a href="index.html" class= "header__logo"><img src="img/Logo.svg" alt=""></a>
+            <nav id="popup-close" class="menu__body menu">
+               <ul class="menu__list">
+                  <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">How it’s made?</a></li></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Our products</a></li></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Contact</a></li></li>
+               </ul>
+               <div class="menu__btn">
+                <a class="menu__btn-link default-btn" href="#popup">Buy now</a>
+               </div>
+            </nav>
+            <div class="header__button">
+              <a href="#open" class="icon-menu"><span></span></a>
+              <a href="#close" class="close-icon-menu"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M23.884 6.70597L16 14.59L8.11602 6.70597C7.9264 6.53245 7.67714 6.43878 7.42017 6.44448C7.1632 6.45017 6.91833 6.55479 6.73658 6.73654C6.55484 6.91829 6.45022 7.16315 6.44452 7.42012C6.43883 7.67709 6.5325 7.92635 6.70602 8.11597L14.586 16L6.70402 23.882C6.60773 23.9737 6.53075 24.0838 6.47761 24.2058C6.42448 24.3277 6.39626 24.4591 6.39461 24.5921C6.39296 24.7251 6.41792 24.8571 6.46802 24.9803C6.51812 25.1035 6.59235 25.2155 6.68634 25.3096C6.78033 25.4038 6.89219 25.4781 7.01535 25.5284C7.1385 25.5787 7.27046 25.6038 7.40348 25.6024C7.53649 25.6009 7.66787 25.5729 7.78989 25.5199C7.91191 25.467 8.02211 25.3901 8.11402 25.294L16 17.412L23.884 25.296C24.0736 25.4695 24.3229 25.5632 24.5799 25.5575C24.8368 25.5518 25.0817 25.4472 25.2635 25.2654C25.4452 25.0837 25.5498 24.8388 25.5555 24.5818C25.5612 24.3249 25.4675 24.0756 25.294 23.886L17.41 16.002L25.294 8.11597C25.3903 8.0242 25.4673 7.91411 25.5204 7.79216C25.5736 7.67022 25.6018 7.53888 25.6034 7.40587C25.6051 7.27286 25.5801 7.14086 25.53 7.01763C25.4799 6.89441 25.4057 6.78244 25.3117 6.68832C25.2177 6.59419 25.1058 6.5198 24.9827 6.46953C24.8595 6.41926 24.7276 6.39411 24.5946 6.39557C24.4616 6.39703 24.3302 6.42506 24.2082 6.47802C24.0861 6.53099 23.9759 6.60781 23.884 6.70397V6.70597Z" fill="#FCFCFC"/>
+                </svg>
+                </a>
+            </div>
+            <div id="popup" class="popup">
+              <div class="popup__container container">
+                <a href="#popup__close-button" class="popup__close-button"><svg class="popup__close-button_link" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M5.62687 4.99997L9.31132 1.31553C9.38413 1.23051 9.42217 1.12114 9.41785 1.00928C9.41353 0.897427 9.36716 0.791321 9.28801 0.712168C9.20886 0.633015 9.10275 0.586645 8.9909 0.582324C8.87904 0.578004 8.76967 0.616051 8.68465 0.688863L5.00021 4.37331L1.31576 0.684418C1.23207 0.600728 1.11856 0.553711 1.00021 0.553711C0.881849 0.553711 0.76834 0.600728 0.68465 0.684418C0.600959 0.768109 0.553942 0.881618 0.553942 0.999974C0.553942 1.11833 0.600959 1.23184 0.68465 1.31553L4.37354 4.99997L0.68465 8.68442C0.638124 8.72426 0.600337 8.77329 0.57366 8.82843C0.546983 8.88357 0.531992 8.94363 0.529628 9.00484C0.527264 9.06605 0.537577 9.12708 0.559922 9.18412C0.582266 9.24115 0.616158 9.29295 0.659472 9.33626C0.702785 9.37958 0.754584 9.41347 0.811617 9.43581C0.86865 9.45816 0.929687 9.46847 0.990896 9.46611C1.0521 9.46374 1.11216 9.44875 1.1673 9.42207C1.22244 9.3954 1.27147 9.35761 1.31132 9.31109L5.00021 5.62664L8.68465 9.31109C8.76967 9.3839 8.87904 9.42194 8.9909 9.41762C9.10275 9.4133 9.20886 9.36693 9.28801 9.28778C9.36716 9.20863 9.41353 9.10252 9.41785 8.99066C9.42217 8.87881 9.38413 8.76944 9.31132 8.68442L5.62687 4.99997Z" fill="#131313"/>
+                  </svg></a>
+                    <div class="popup__title common-title_style">Buy now</div>
+                    <ul class="popup__ice-block">
+                      <li class="ice-block__popup-block-item popup_ice-cream">
+                        <div class="popup_block-image"><img src="img/main/block-row/row-image 1.jpg" width="131" height="131" alt="0"></div>
+                        <div class="popup__subtitle">ice cream</div>
+                      </li>
+                      <li class="ice-block__popup-block-item popup_ice-coffee">
+                        <div class="popup_block-image"><img src="img/main/block-row/row-image 2.jpg" width="131" height="131" alt="0"></div>
+                        <div class="popup__subtitle">ice coffee</div>
+                      </li>
+                      <li class="ice-block__popup-block-item popup_milkshakes">
+                        <div class="popup_block-image">
+                          <img src="img/main/block-row/row-image 3.jpg" width="131" height="131" alt="0">
+                        </div>
+                        <div class="popup__subtitle">milkshakes</div>
+                      </li>
+                    </ul>
+                    <div class="popup__register">
+                      <form action="#" class="regist-block">
+                        <input class="regist-block__input" placeholder="Name" type="text">
+                        <input class="regist-block__input" placeholder="Phone" type="text">
+                        <textarea class="regist-block__textarea" placeholder="Comment"></textarea>
+                        <button class="submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <section class="cream-made">
+            <div class="cream-made__container container">
+              <div class="cream-made__main-block">
+                <h1 class="main-block__title">
+                  ice cream made with <span>passion</span>
+                </h1>
+                <div class="main-block__btn">
+                  <a class="products-btn__link btn__link" href="#">Products</a>
+                  <a href="#made-video_open-button" class="made-btn__link btn__link">How it’s made</a>
+                </div>             
+              </div>
+            </div>
+          </section>
+          <div id="made-video_open-button" class="made-video-page">
+            <div class="made-video-page__container container">
+              <a href="#made-video_close-button" class="popup__close-button"><svg class="popup__close-button_link" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M5.62687 4.99997L9.31132 1.31553C9.38413 1.23051 9.42217 1.12114 9.41785 1.00928C9.41353 0.897427 9.36716 0.791321 9.28801 0.712168C9.20886 0.633015 9.10275 0.586645 8.9909 0.582324C8.87904 0.578004 8.76967 0.616051 8.68465 0.688863L5.00021 4.37331L1.31576 0.684418C1.23207 0.600728 1.11856 0.553711 1.00021 0.553711C0.881849 0.553711 0.76834 0.600728 0.68465 0.684418C0.600959 0.768109 0.553942 0.881618 0.553942 0.999974C0.553942 1.11833 0.600959 1.23184 0.68465 1.31553L4.37354 4.99997L0.68465 8.68442C0.638124 8.72426 0.600337 8.77329 0.57366 8.82843C0.546983 8.88357 0.531992 8.94363 0.529628 9.00484C0.527264 9.06605 0.537577 9.12708 0.559922 9.18412C0.582266 9.24115 0.616158 9.29295 0.659472 9.33626C0.702785 9.37958 0.754584 9.41347 0.811617 9.43581C0.86865 9.45816 0.929687 9.46847 0.990896 9.46611C1.0521 9.46374 1.11216 9.44875 1.1673 9.42207C1.22244 9.3954 1.27147 9.35761 1.31132 9.31109L5.00021 5.62664L8.68465 9.31109C8.76967 9.3839 8.87904 9.42194 8.9909 9.41762C9.10275 9.4133 9.20886 9.36693 9.28801 9.28778C9.36716 9.20863 9.41353 9.10252 9.41785 8.99066C9.42217 8.87881 9.38413 8.76944 9.31132 8.68442L5.62687 4.99997Z" fill="#131313"/>
+                </svg></a>
+              <h2 class="made-video-page__title common-title_style">How it’s made?</h2>
+              <div class="made-video-page__video"><iframe src="https://www.youtube.com/embed/X5zxhtoyiJ0" title="ДЖО ДЖО ЗА 30 МИНУТ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+              <div class="made-video-page__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p></div>
+            </div>
+          </div>
+          <section class="natural-products">
+            <div class="natural-products__container container">
+              <h1 class="natural-products__title">100% natural <span>Products</span></h1>
+              <ul class="natural-products__row-column">
+                <li class="natural-products__block-item block-item top-block">
+                  <div class="block-item__background">
+                    <img src="img/main/block-row/row-image 1.jpg" width="200" height="200" alt="">
+                  </div>
+                  <div class="block-item__block-text">
+                    <h2 class="block-item__title">ice cream</h2>
+                    <div class="block-item__text"><p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                    </div>
+                  </div>
+                  <div class="block-item__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
+                      <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                      </svg>
+                  </div>
+                </li>
+                <li class="natural-products__block-item block-item middle-block">
+                  <div class="block-item__background">
+                    <img class="block-item__background-image" src="img/main/block-row/row-image 2.jpg" width="200" height="200" alt="">
+                  </div>
+                  <div class="block-item__block-text">
+                    <h3 class="block-item__title">ice coffee</h3>
+                    <div class="block-item__text"><p>Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
+                    </div>
+                  </div>
+                  <div class="block-item__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
+                      <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                      </svg>
+                  </div>
+                </li >
+                <li class="natural-products__block-item block-item low-block">
+                  <div class="block-item__background">
+                    <img class="block-item__background-image" src="img/main/block-row/row-image 3.jpg" width="200" height="200" alt="">
+
+                  </div>
+                  <div class="block-item__block-text">
+                    <h4 class="block-item__title">milkshakes</h4>
+                    <div class="block-item__text"><p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
+                    </div>
+                  </div>
+                  <div class="block-item__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
+                      <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
+                      </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="organic-products">
+            <div class="organic-products__container container">
+              <div class="organic-products__title">tradition and love</div>
+              <div class="organic-products__subtitle">how it’s made?</div>
+              <div class="organic-products__main-block main-block">
+                <div class="main-block__block-image"><img class="main-block__image" src="img/main/organic-products/мороженко 1.jpg" width="278px" height="278px" alt=""></div>
+                <div class="main-block__block-text"><p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p> 
+                  <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+                  </p>
+                </div>
+                <a href="#" class="submit-button">Read more</a>
+              </div>
+              <ul class="organic-products__consist-block consist-block">
+                <li class="consist-block__item cow-number">
+                  <div class="consist-block__icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <g clip-path="url(#clip0_4683_150)">
+                    <path d="M6.93937 0.216297C6.64615 0.469917 5.80724 2.21992 5.50588 3.17524C5.14751 4.35881 5.02534 5.24649 5.07421 6.47234C5.13937 8.22233 5.57919 9.54963 6.54842 10.9361C6.80091 11.2996 7.00453 11.6124 7.00453 11.6378C7.00453 11.6547 6.84977 11.6716 6.6543 11.6716C5.81538 11.6716 4.24344 11.9506 3.03801 12.3141C1.12398 12.889 0 13.895 0 15.0194C0 15.4168 0.358371 16.0931 0.741176 16.4397C1.48235 17.1076 3.10317 17.7417 4.84615 18.046C5.44887 18.1559 7.24072 18.3419 7.63982 18.3504C7.71312 18.3504 7.73756 18.7392 7.73756 20.0158C7.73756 21.1148 7.77828 21.9687 7.85973 22.4929C8.15294 24.3697 9.06516 26.3564 10.2706 27.7598L10.686 28.2417L10.409 28.6897C10.0018 29.3238 9.84706 29.8057 9.79819 30.5243C9.67602 32.2489 10.7511 33.7791 12.8281 34.8528C16.7864 36.9071 22.9357 36.104 25.2407 33.2296C26.3647 31.8262 26.495 30.2199 25.6072 28.7658L25.3303 28.3177L25.8272 27.7175C26.7557 26.6016 27.3584 25.4856 27.8145 24.0738C28.1973 22.8733 28.3439 21.7151 28.3439 19.8805C28.3439 19.0436 28.3683 18.3504 28.4091 18.3504C28.7837 18.3419 30.5837 18.1475 31.1538 18.046C32.905 17.7417 34.4932 17.1161 35.2588 16.4397C35.6416 16.0931 36 15.4168 36 15.0194C36 13.7682 34.7294 12.7537 32.3674 12.145C31.5937 11.9421 30.1357 11.697 29.4272 11.6547L29.0932 11.6293L29.4597 11.1221C29.9158 10.5049 30.486 9.30446 30.7059 8.51823C31.3249 6.24407 30.9421 3.59794 29.6145 1.07016C29.0606 0.0218506 28.6778 -0.223316 28.2299 0.190933C28.0588 0.351562 27.9855 0.571369 27.8226 1.36605C27.3176 3.89383 26.381 5.89746 25.0127 7.37692L24.41 8.03634H17.9674H11.5249L10.9873 7.45301C9.65158 5.982 8.68235 3.90229 8.17738 1.36605C8.01448 0.571369 7.94118 0.351562 7.77014 0.190933C7.50136 -0.0542336 7.24072 -0.0457802 6.93937 0.216297ZM7.9819 5.22958C8.41358 6.17644 8.95113 7.06412 9.58643 7.88417L10.0914 8.53514L9.56199 8.93248C9.06516 9.31291 8.60091 9.85398 8.24253 10.4711L8.08778 10.7501L7.69683 10.2175C6.36109 8.37451 6.02715 6.11726 6.73575 3.77547C7.07783 2.64263 7.06968 2.65108 7.37919 3.63176C7.52579 4.10519 7.80272 4.82378 7.9819 5.22958ZM29.1828 3.44577C29.5167 4.45181 29.6471 5.25494 29.6471 6.2948C29.6471 7.83345 29.2398 9.13538 28.3846 10.302L28.0018 10.8262L27.7167 10.3443C27.3828 9.75253 26.8127 9.13538 26.2914 8.78031C26.0715 8.63659 25.9005 8.49287 25.9005 8.47596C25.9005 8.4506 26.0552 8.25615 26.2507 8.0448C27.1548 7.03876 28.124 5.22958 28.6045 3.67403C28.7511 3.19214 28.8977 2.7948 28.9222 2.7948C28.9466 2.7948 29.0688 3.09069 29.1828 3.44577ZM25.0208 9.62572C25.9249 10.0062 26.7882 11.0967 26.9267 12.0182C27 12.5255 27.171 12.8467 27.391 12.8975C27.4887 12.9144 28.1647 12.9735 28.8896 13.0243C31.4634 13.1933 33.4914 13.7429 34.3548 14.4953C34.7538 14.8504 34.7131 15.1462 34.2326 15.5098C33.2715 16.2368 31.1946 16.7863 29.0769 16.8793C27.676 16.9385 27.3828 16.9808 27.1955 17.1752C27.057 17.319 27.0407 17.4711 27.0407 19.0013C27.0407 21.0726 26.9348 22.2646 26.6742 23.2284C26.3077 24.5388 25.5828 25.9337 24.7357 26.9228L24.3855 27.3286L23.6606 26.8974C22.781 26.3733 21.9584 26.0351 20.9729 25.8069C17.886 25.0714 14.4733 25.5194 12.1765 26.9651L11.6471 27.3032L11.3131 26.9059C10.857 26.3733 10.1403 25.232 9.8552 24.5895C9.22806 23.1354 9.04072 21.9518 9.04072 19.3479C9.04072 16.8202 9.17104 17.0061 7.29774 16.9047C4.90317 16.7779 3.07873 16.3467 1.93032 15.6197C1.08326 15.0786 1.22172 14.5967 2.40271 14.0303C3.53484 13.4808 5.0905 13.1511 7.24887 13.0158C8.9267 12.9059 8.96742 12.8805 9.12217 12.069C9.35023 10.8431 10.2543 9.82862 11.3946 9.50736C11.6796 9.42282 13.276 9.40591 18.1629 9.41436L24.5566 9.43127L25.0208 9.62572ZM20.4434 27.1257C22.4389 27.616 23.9294 28.5291 24.5729 29.6619C24.7276 29.924 24.7928 30.1945 24.8253 30.6088C24.8579 31.1245 24.8335 31.2513 24.638 31.674C23.7339 33.5931 20.4109 34.8612 17.0308 34.5738C12.9665 34.2356 10.295 31.9699 11.3457 29.7465C11.9158 28.546 13.8462 27.3962 15.8824 27.0581C16.2163 27.0074 16.5502 26.9482 16.6154 26.9313C16.6805 26.9144 17.4136 26.9144 18.2443 26.9313C19.3765 26.9566 19.9222 27.0074 20.4434 27.1257Z" fill="#131313"/>
+                    <path d="M12.3635 13.8613C11.8585 14.0304 11.5164 14.2502 11.0603 14.7067C10.6612 15.0871 10.6286 15.5352 10.9626 15.8057C11.2721 16.0593 11.5653 16.0255 11.9399 15.6958C12.4123 15.2816 12.7789 15.1125 13.235 15.1125C13.6911 15.104 14.0413 15.2647 14.53 15.6958C14.9046 16.0255 15.1979 16.0593 15.5074 15.8057C15.6703 15.6705 15.7191 15.5606 15.7191 15.3069C15.7191 15.0449 15.6621 14.9265 15.377 14.6391C14.5707 13.8275 13.3734 13.5147 12.3635 13.8613Z" fill="#131313"/>
+                    <path d="M21.8606 13.8525C21.3393 14.047 20.6714 14.4866 20.4026 14.8163C20.142 15.1376 20.1339 15.5011 20.4026 15.7716C20.6714 16.0591 20.9972 16.0421 21.3882 15.7209C22.3492 14.9262 23.066 14.9008 23.9538 15.6364C24.1818 15.8308 24.4425 15.983 24.5239 15.983C24.923 15.983 25.2488 15.6279 25.2488 15.2052C25.2488 14.9347 24.5728 14.3091 23.9619 14.0132C23.2859 13.6835 22.4796 13.6243 21.8606 13.8525Z" fill="#131313"/>
+                    <path d="M13.5448 29.5015C13.3086 29.7298 13.2272 30.0595 13.3493 30.3216C13.4389 30.5329 13.5774 30.6175 14.1394 30.7697C14.3919 30.8373 14.4978 30.9218 14.5874 31.1332C14.7014 31.4122 14.7095 31.4122 15.3367 31.4375L15.9638 31.4629V31.2262C15.9557 30.888 15.7683 30.3977 15.524 30.0595C15.2389 29.6706 14.7421 29.417 14.1801 29.3663C13.7973 29.3325 13.6996 29.3494 13.5448 29.5015Z" fill="#131313"/>
+                    <path d="M21.3228 29.4419C20.9155 29.5518 20.3291 30.1013 20.1662 30.5325C20.0929 30.7269 20.0196 31.0735 20.0115 31.3018C19.9952 31.6653 20.0278 31.7499 20.2232 31.9274C20.7038 32.3501 21.3391 32.0204 21.3391 31.3441C21.3391 31.0144 21.5834 30.7861 22.0151 30.7016C22.4712 30.617 22.6341 30.431 22.6422 29.9999C22.6422 29.4335 22.1373 29.2136 21.3228 29.4419Z" fill="#131313"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_4683_150">
+                    <rect width="36" height="36" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg></div>
+                  <div class="consist-block__block-text">
+                    <div class="consist-block__title">721</div>
+                    <div class="consist-block__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                  </div>
+                </li>
+                <li class="consist-block__item weight-number">
+                  <div class="consist-block__icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M15.9495 0.615292C11.4785 1.27834 7.79691 3.76071 6.4423 7.01123C6.01016 8.03814 5.89381 8.66884 5.89381 9.90598C5.90212 10.8197 5.93536 11.1593 6.07664 11.6525C6.36751 12.6228 6.57527 13.1161 7.00742 13.8115L7.40632 14.4583L6.95755 15.0082C3.40897 19.4231 3.01837 25.633 5.97691 30.525C7.08221 32.3605 8.88559 34.1637 10.6474 35.2148L11.171 35.5221L18.3346 35.4655L25.5066 35.4008L25.8473 35.2148C27.0357 34.5437 28.7144 33.0478 29.6535 31.8349C31.0663 29.9913 31.9888 27.8405 32.3794 25.5118C32.5123 24.6789 32.5123 22.2127 32.3711 21.4284C31.9472 19.0107 31.0414 16.9407 29.612 15.1052C29.3377 14.7575 29.1217 14.4664 29.1217 14.4422C29.1217 14.426 29.2712 14.1753 29.4458 13.8923C29.853 13.2455 30.2186 12.4126 30.4181 11.6849C30.6425 10.8763 30.6425 8.85482 30.4181 8.04623C29.6203 5.17574 27.2269 2.78231 23.8445 1.46431C22.8971 1.09236 21.2765 0.696152 20.2294 0.566776C19.2571 0.453575 16.8554 0.477833 15.9495 0.615292ZM21.0106 1.93329C25.4484 2.79848 28.6978 5.51534 29.2962 8.8629C29.4291 9.61489 29.346 10.8925 29.1217 11.604C28.8973 12.2994 28.4818 13.1161 27.9914 13.8115C27.792 14.0945 27.6258 14.4179 27.6258 14.523C27.6258 14.6281 27.8003 14.9031 28.0496 15.178C30.1272 17.4825 31.2242 20.3691 31.2242 23.4903C31.2159 27.04 29.853 30.1531 27.2269 32.595C26.7781 33.0155 26.1382 33.5411 25.7975 33.7675L25.1742 34.1879L18.3014 34.2122L11.4369 34.2445L10.905 33.9049C8.977 32.6516 7.24011 30.5816 6.27609 28.3823C5.06276 25.6007 4.9381 22.3744 5.92705 19.4797C6.45061 17.9757 7.14869 16.7467 8.21244 15.4529C8.64458 14.9354 8.84404 14.6281 8.84404 14.4826C8.84404 14.3613 8.62796 13.9651 8.34541 13.5527C7.34815 12.1053 6.94093 10.4963 7.18194 8.97611C7.43125 7.43979 8.12933 6.17839 9.41746 4.92507C11.0962 3.29981 13.4397 2.22438 16.1905 1.82009C17.3291 1.65029 19.8471 1.71497 21.0106 1.93329Z" fill="black"/>
+                    <path d="M16.3229 3.35635C12.9155 3.91428 10.2479 5.80638 9.37527 8.28875C9.17582 8.84667 9.14258 9.06499 9.14258 9.86549C9.14258 10.666 9.17582 10.8843 9.37527 11.4422C9.49993 11.798 9.73262 12.2913 9.89052 12.5419C10.3227 13.2373 10.5138 13.2616 11.3698 12.7441C12.6496 11.9597 14.1206 11.3856 15.6497 11.0703C16.6802 10.8601 18.6581 10.7792 19.78 10.9086C21.5335 11.1107 23.4366 11.7414 24.9575 12.639C25.3896 12.8896 25.8301 13.0999 25.9381 13.0999C26.5697 13.0999 27.3758 11.2805 27.3758 9.86549C27.3758 6.72008 24.3674 4.02748 20.1041 3.35635C19.1983 3.2108 17.1955 3.2108 16.3229 3.35635ZM20.4365 4.65009C21.866 4.95736 23.179 5.53954 24.168 6.3077C25.4976 7.33461 26.2123 8.76581 26.096 10.1485C26.0544 10.6983 25.8467 11.4422 25.722 11.5231C25.6888 11.5393 25.2234 11.3452 24.6915 11.0865C23.5862 10.5528 22.3313 10.1242 21.0598 9.84932C20.287 9.68761 19.9628 9.66335 18.2343 9.67143C16.5306 9.67143 16.1733 9.69569 15.4336 9.84932C14.1538 10.1242 13.1565 10.4639 11.9266 11.046C10.6883 11.6363 10.7548 11.6444 10.5304 10.9167C10.2396 9.97061 10.4224 8.7173 10.9875 7.77125C11.2867 7.26992 12.1094 6.43708 12.7078 6.0247C13.8463 5.24036 14.8436 4.88458 16.9877 4.49646C17.4281 4.4156 19.8714 4.5288 20.4365 4.65009Z" fill="black"/>
+                    <path d="M19.0827 15.0808C18.85 15.3719 18.85 15.6468 19.091 15.8813C19.2489 16.035 19.4068 16.0754 19.9802 16.1158C21.0938 16.1967 22.1576 16.5201 23.1133 17.07C23.7947 17.4743 24.8335 18.4526 25.2989 19.1561C25.9887 20.1669 26.4624 21.6142 26.4624 22.6816C26.4624 23.0535 26.4956 23.1667 26.6702 23.3284C26.9361 23.5953 27.2851 23.5953 27.5428 23.3284C27.7256 23.1425 27.7339 23.0939 27.684 22.3015C27.4513 18.388 24.1022 15.1213 20.0966 14.9029L19.2655 14.8544L19.0827 15.0808Z" fill="black"/>
+                  </svg></div>
+                  <div class="consist-block__block-text">
+                    <div class="consist-block__title">16KG</div>
+                    <div class="consist-block__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                  </div>
+                </li>
+                <li class="consist-block__item ice-number">
+                  <div class="consist-block__icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M15.9495 0.615292C11.4785 1.27834 7.79691 3.76071 6.4423 7.01123C6.01016 8.03814 5.89381 8.66884 5.89381 9.90598C5.90212 10.8197 5.93536 11.1593 6.07664 11.6525C6.36751 12.6228 6.57527 13.1161 7.00742 13.8115L7.40632 14.4583L6.95755 15.0082C3.40897 19.4231 3.01837 25.633 5.97691 30.525C7.08221 32.3605 8.88559 34.1637 10.6474 35.2148L11.171 35.5221L18.3346 35.4655L25.5066 35.4008L25.8473 35.2148C27.0357 34.5437 28.7144 33.0478 29.6535 31.8349C31.0663 29.9913 31.9888 27.8405 32.3794 25.5118C32.5123 24.6789 32.5123 22.2127 32.3711 21.4284C31.9472 19.0107 31.0414 16.9407 29.612 15.1052C29.3377 14.7575 29.1217 14.4664 29.1217 14.4422C29.1217 14.426 29.2712 14.1753 29.4458 13.8923C29.853 13.2455 30.2186 12.4126 30.4181 11.6849C30.6425 10.8763 30.6425 8.85482 30.4181 8.04623C29.6203 5.17574 27.2269 2.78231 23.8445 1.46431C22.8971 1.09236 21.2765 0.696152 20.2294 0.566776C19.2571 0.453575 16.8554 0.477833 15.9495 0.615292ZM21.0106 1.93329C25.4484 2.79848 28.6978 5.51534 29.2962 8.8629C29.4291 9.61489 29.346 10.8925 29.1217 11.604C28.8973 12.2994 28.4818 13.1161 27.9914 13.8115C27.792 14.0945 27.6258 14.4179 27.6258 14.523C27.6258 14.6281 27.8003 14.9031 28.0496 15.178C30.1272 17.4825 31.2242 20.3691 31.2242 23.4903C31.2159 27.04 29.853 30.1531 27.2269 32.595C26.7781 33.0155 26.1382 33.5411 25.7975 33.7675L25.1742 34.1879L18.3014 34.2122L11.4369 34.2445L10.905 33.9049C8.977 32.6516 7.24011 30.5816 6.27609 28.3823C5.06276 25.6007 4.9381 22.3744 5.92705 19.4797C6.45061 17.9757 7.14869 16.7467 8.21244 15.4529C8.64458 14.9354 8.84404 14.6281 8.84404 14.4826C8.84404 14.3613 8.62796 13.9651 8.34541 13.5527C7.34815 12.1053 6.94093 10.4963 7.18194 8.97611C7.43125 7.43979 8.12933 6.17839 9.41746 4.92507C11.0962 3.29981 13.4397 2.22438 16.1905 1.82009C17.3291 1.65029 19.8471 1.71497 21.0106 1.93329Z" fill="black"/>
+                    <path d="M16.3229 3.35635C12.9155 3.91428 10.2479 5.80638 9.37527 8.28875C9.17582 8.84667 9.14258 9.06499 9.14258 9.86549C9.14258 10.666 9.17582 10.8843 9.37527 11.4422C9.49993 11.798 9.73262 12.2913 9.89052 12.5419C10.3227 13.2373 10.5138 13.2616 11.3698 12.7441C12.6496 11.9597 14.1206 11.3856 15.6497 11.0703C16.6802 10.8601 18.6581 10.7792 19.78 10.9086C21.5335 11.1107 23.4366 11.7414 24.9575 12.639C25.3896 12.8896 25.8301 13.0999 25.9381 13.0999C26.5697 13.0999 27.3758 11.2805 27.3758 9.86549C27.3758 6.72008 24.3674 4.02748 20.1041 3.35635C19.1983 3.2108 17.1955 3.2108 16.3229 3.35635ZM20.4365 4.65009C21.866 4.95736 23.179 5.53954 24.168 6.3077C25.4976 7.33461 26.2123 8.76581 26.096 10.1485C26.0544 10.6983 25.8467 11.4422 25.722 11.5231C25.6888 11.5393 25.2234 11.3452 24.6915 11.0865C23.5862 10.5528 22.3313 10.1242 21.0598 9.84932C20.287 9.68761 19.9628 9.66335 18.2343 9.67143C16.5306 9.67143 16.1733 9.69569 15.4336 9.84932C14.1538 10.1242 13.1565 10.4639 11.9266 11.046C10.6883 11.6363 10.7548 11.6444 10.5304 10.9167C10.2396 9.97061 10.4224 8.7173 10.9875 7.77125C11.2867 7.26992 12.1094 6.43708 12.7078 6.0247C13.8463 5.24036 14.8436 4.88458 16.9877 4.49646C17.4281 4.4156 19.8714 4.5288 20.4365 4.65009Z" fill="black"/>
+                    <path d="M19.0827 15.0808C18.85 15.3719 18.85 15.6468 19.091 15.8813C19.2489 16.035 19.4068 16.0754 19.9802 16.1158C21.0938 16.1967 22.1576 16.5201 23.1133 17.07C23.7947 17.4743 24.8335 18.4526 25.2989 19.1561C25.9887 20.1669 26.4624 21.6142 26.4624 22.6816C26.4624 23.0535 26.4956 23.1667 26.6702 23.3284C26.9361 23.5953 27.2851 23.5953 27.5428 23.3284C27.7256 23.1425 27.7339 23.0939 27.684 22.3015C27.4513 18.388 24.1022 15.1213 20.0966 14.9029L19.2655 14.8544L19.0827 15.0808Z" fill="black"/>
+                  </svg></div>
+                  <div class="consist-block__block-text">
+                    <div class="consist-block__title">84</div>
+                    <div class="consist-block__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="clients-block">
+            <div class="clients-block__container container">
+              <div class="clients-block__comment">
+                <div class="comment-title-image"><img src="img/main/title-image.jpg" width="280" height="130" alt=""></div>
+                <div class="comment-block">
+                  <div class="comment-block__sub-image"><img src="img/main/client-block-image.png" alt=""></div>
+                  <div class="comment-block__text">I love visiting your cafe.
+                    You prepare the most delicious ice cream in Los Angeles! 
+                   In addition, you have beautiful serving, cozy atmosphere and polite staff.</div>
+                </div>
+                <div class="comment-block__person-location">
+                  <div class="person-location__text">Emily, Los Angeles</div>
+                  <div class="person-location__icon"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="13" viewBox="0 0 72 13" fill="none">
+                    <ellipse cx="6" cy="6.53416" rx="6" ry="6.00145" fill="#84A178"/>
+                    <ellipse cx="36" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
+                    <ellipse cx="66" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="work-time">
+            <div class="work-time__container container">
+              <ul class="work-time__schedule-block">
+                <li class="schedule__item first-cafe">
+                  <h1 class="schedule-item__title">cafe</h1>
+                  <div class="schedule-item__inner-block">
+                    <div class="inner-block__first inner-block">
+                      <h2 class="inner-block__title">Chicago</h2>
+                      <div class="inner-block__text extra-color"><span>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</span></div>
+                    </div>
+                    <div class="inner-block__second inner-block">
+                      <h2 class="inner-block__title">Monday - Friday</h2>
+                      <time class="inner-block__text">06:00 AM - 10:00 PM</time>
+                      <h2 class="inner-block__subtitle">Saturday - Sunday</h2>
+                      <div class="inner-block__subtext">08:00 AM - 16:00 PM</div>
+                    </div>
+                    <div class="inner-block__call inner-block">
+                      <div class="inner-block__text"><span>+61(0) 383 766 284 noreply@envato.com</span></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="schedule__item food-truck">
+                    <h1 class="schedule-item__title">Foodtruck</h1>
+                    <div class="schedule-item__inner-block">
+                      <div class="inner-block__first inner-block">
+                        <h2 class="inner-block__title">Los Angeles</h2>
+                        <div class="inner-block__text extra-color"><span>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</span></div>
+                      </div>
+                      <div class="inner-block__second inner-block">
+                        <h2 class="inner-block__title">Monday - Friday</h2>
+                        <time class="inner-block__text">06:00 AM - 10:00 PM</time>
+                        <h2 class="inner-block__subtitle">Saturday - Sundayo</h2>
+                        <time class="inner-block__subtext">08:00 AM - 16:00 PM</time>
+                      </div>
+                      <div class="inner-block__call inner-block">
+                        <div class="inner-block__text"><span>+61(0) 383 766 284 noreply@envato.com</span></div>
+                      </div>
+                    </div>
+                </li>
+                <li class="schedule__item final-cafe">
+                  <h1 class="schedule-item__title">cafe</h1>
+                  <div class="schedule-item__inner-block">
+                    <div class="inner-block__first inner-block">
+                      <h2 class="inner-block__title">New York</h2>
+                      <div class="inner-block__text extra-color"><span>726 Sterling Pl, Brooklyn, NY 11222, USA</span></div>
+                    </div>
+                    <div class="inner-block__second inner-block">
+                      <h2 class="inner-block__title">Monday - Friday</h2>
+                      <div class="inner-block__text">06:00 AM - 10:00 PM</div>
+                      <h2 class="inner-block__subtitle">Saturday - Sundayo</h2>
+                      <time class="inner-block__subtext">08:00 AM - 16:00 PM</time>
+                    </div>
+                    <div class="inner-block__call inner-block">
+                      <div class="inner-block__text"><span>+61(0) 383 766 284 noreply@envato.com</span></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="work-time__button">
+                <a href="#location-page__open-button" class=" submit-button work-time-button__link location-button">Our Locations
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M4 2L8.95 6L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#franchise-page__open-button" class="work-time-button__link franchise-button">Franchise
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M4 2L8.95 6L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+              </div>
+              <div id="location-page__open-button" class="location-page">
+                <div class="location-page__container container">
+                  <a href="#location-page__close-button" class="popup__close-button"><svg class="popup__close-button_link" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.62687 4.99997L9.31132 1.31553C9.38413 1.23051 9.42217 1.12114 9.41785 1.00928C9.41353 0.897427 9.36716 0.791321 9.28801 0.712168C9.20886 0.633015 9.10275 0.586645 8.9909 0.582324C8.87904 0.578004 8.76967 0.616051 8.68465 0.688863L5.00021 4.37331L1.31576 0.684418C1.23207 0.600728 1.11856 0.553711 1.00021 0.553711C0.881849 0.553711 0.76834 0.600728 0.68465 0.684418C0.600959 0.768109 0.553942 0.881618 0.553942 0.999974C0.553942 1.11833 0.600959 1.23184 0.68465 1.31553L4.37354 4.99997L0.68465 8.68442C0.638124 8.72426 0.600337 8.77329 0.57366 8.82843C0.546983 8.88357 0.531992 8.94363 0.529628 9.00484C0.527264 9.06605 0.537577 9.12708 0.559922 9.18412C0.582266 9.24115 0.616158 9.29295 0.659472 9.33626C0.702785 9.37958 0.754584 9.41347 0.811617 9.43581C0.86865 9.45816 0.929687 9.46847 0.990896 9.46611C1.0521 9.46374 1.11216 9.44875 1.1673 9.42207C1.22244 9.3954 1.27147 9.35761 1.31132 9.31109L5.00021 5.62664L8.68465 9.31109C8.76967 9.3839 8.87904 9.42194 8.9909 9.41762C9.10275 9.4133 9.20886 9.36693 9.28801 9.28778C9.36716 9.20863 9.41353 9.10252 9.41785 8.99066C9.42217 8.87881 9.38413 8.76944 9.31132 8.68442L5.62687 4.99997Z" fill="#131313"/>
+                    </svg></a> 
+                  <h1 class="location-page__title common-title_style">Our location</h1>
+                   <div class="location-page__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95942.48002517321!2d69.19696639704058!3d41.28269707463922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1698765286765!5m2!1sru!2s" width="224" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                   <form action="https://www.google.com/maps/place/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.2826971,69.1969664,12z/data=!3m1!4b1!4m6!3m5!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98!8m2!3d41.2994958!4d69.2400734!16zL20vMGZzbXk?entry=ttu">
+                    <button class="location-page__map-open_button">Open map</button>
+                   </form>
+                </div>
+              </div>
+              <div id="franchise-page__open-button" class="franchise-page">
+                <div class="franchise-page__container container">
+                  <a href="#franchise-page__close-button" class="popup__close-button"><svg class="popup__close-button_link" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.62687 4.99997L9.31132 1.31553C9.38413 1.23051 9.42217 1.12114 9.41785 1.00928C9.41353 0.897427 9.36716 0.791321 9.28801 0.712168C9.20886 0.633015 9.10275 0.586645 8.9909 0.582324C8.87904 0.578004 8.76967 0.616051 8.68465 0.688863L5.00021 4.37331L1.31576 0.684418C1.23207 0.600728 1.11856 0.553711 1.00021 0.553711C0.881849 0.553711 0.76834 0.600728 0.68465 0.684418C0.600959 0.768109 0.553942 0.881618 0.553942 0.999974C0.553942 1.11833 0.600959 1.23184 0.68465 1.31553L4.37354 4.99997L0.68465 8.68442C0.638124 8.72426 0.600337 8.77329 0.57366 8.82843C0.546983 8.88357 0.531992 8.94363 0.529628 9.00484C0.527264 9.06605 0.537577 9.12708 0.559922 9.18412C0.582266 9.24115 0.616158 9.29295 0.659472 9.33626C0.702785 9.37958 0.754584 9.41347 0.811617 9.43581C0.86865 9.45816 0.929687 9.46847 0.990896 9.46611C1.0521 9.46374 1.11216 9.44875 1.1673 9.42207C1.22244 9.3954 1.27147 9.35761 1.31132 9.31109L5.00021 5.62664L8.68465 9.31109C8.76967 9.3839 8.87904 9.42194 8.9909 9.41762C9.10275 9.4133 9.20886 9.36693 9.28801 9.28778C9.36716 9.20863 9.41353 9.10252 9.41785 8.99066C9.42217 8.87881 9.38413 8.76944 9.31132 8.68442L5.62687 4.99997Z" fill="#131313"/>
+                    </svg></a> 
+                    <h1 class="franchise-page__title common-title_style">Thank you for your interest in owning an Ice Cream shop</h1>
+                    <div class="franchise-page__text">
+                      <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
+                    </div>
+                    <form action="#" class="franchise-page__register-form">
+                      <input placeholder="Name" type="text" id="name">
+                      <input placeholder="Phone" type="text" id="phone">
+                      <input placeholder="Email" type="text" id="email">
+                      <textarea placeholder="Comment"></textarea>
+                      <button class="submit-button">Submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="social-network">
+            <div class="social-network__container container">
+              <h1 class="social-network__title">
+                homemade ice cream made
+              </h1>
+              <div class="social-network__short-title">
+                with passion
+              </div>
+              <ul class="contacts__row">
+                <li class="contacts__item"><a class="contacts__link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <ellipse cx="16" cy="16.9431" rx="16" ry="16.0039" fill="#F8D24E"/>
+                  <path d="M15.9997 7.52905C10.8302 7.52905 6.58789 11.7724 6.58789 16.9431C6.58789 21.3555 9.68331 25.3637 13.7938 26.3571V23.2426C13.3865 23.3318 13.0117 23.3344 12.5971 23.2121C12.0408 23.0479 11.5889 22.6773 11.2534 22.1122C11.0396 21.7514 10.6606 21.3601 10.2652 21.3888L10.1683 20.2899C11.0232 20.2167 11.7628 20.8109 12.2018 21.5487C12.3969 21.8768 12.6213 22.0691 12.9094 22.1542C13.1879 22.2362 13.4869 22.1968 13.8353 22.0737C13.9227 21.376 14.2423 21.1149 14.4837 20.7471V20.7466C12.0322 20.3808 11.0552 19.08 10.6675 18.0532C10.1536 16.6898 10.4294 14.9866 11.338 13.9103C11.3557 13.8893 11.3876 13.8344 11.3752 13.7961C10.9586 12.5373 11.4663 11.496 11.4849 11.3855C11.9657 11.5277 12.0439 11.2425 13.5735 12.172L13.8379 12.3309C13.9484 12.3968 13.9137 12.3592 14.0243 12.3508C14.6629 12.1773 15.3362 12.0815 15.9995 12.0729C16.6679 12.0815 17.3368 12.1773 18.0019 12.3579L18.0875 12.3665C18.08 12.3654 18.1108 12.361 18.1623 12.3303C20.0731 11.1727 20.0044 11.551 20.5168 11.3844C20.5354 11.495 21.0363 12.5532 20.6241 13.7961C20.5685 13.9673 22.2807 15.5355 21.3317 18.0528C20.9439 19.08 19.9671 20.3808 17.5156 20.7466V20.7471C17.8298 21.2262 18.2074 21.481 18.2054 22.4693V26.3571C22.316 25.3637 25.4113 21.3555 25.4113 16.9431C25.4114 11.7724 21.1691 7.52905 15.9997 7.52905V7.52905Z" fill="#84A178"/>
+                  </svg></a></li>
+                <li class="contacts__item"><a class="contacts__link" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                    <g clip-path="url(#clip0_123_208)">
+                      <ellipse cx="16.2354" cy="16.9431" rx="16" ry="16.0039" fill="#F8D24E"/>
+                      <path d="M13.1023 19.3191L12.7847 23.4894C13.2391 23.4894 13.4359 23.3072 13.6719 23.0884L15.8023 21.1877L20.2169 24.2056C21.0265 24.6269 21.5969 24.4051 21.8153 23.5103L24.713 10.8349L24.7138 10.8342C24.9706 9.71689 24.2809 9.27999 23.4921 9.55408L6.45972 15.6416C5.2973 16.0628 5.3149 16.6678 6.26212 16.9419L10.6166 18.2063L20.7313 12.298C21.2073 12.0037 21.6401 12.1665 21.2841 12.4608L13.1023 19.3191Z" fill="#84A178"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_123_208">
+                        <rect width="32" height="32.0077" fill="white" transform="translate(0.235352 0.939209)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a></li>
+                <li class="contacts__item"><a class="contacts__link" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                    <g clip-path="url(#clip0_123_201)">
+                    <path d="M16 32.9469C24.8366 32.9469 32 25.7818 32 16.9431C32 8.10438 24.8366 0.939209 16 0.939209C7.16344 0.939209 0 8.10438 0 16.9431C0 25.7818 7.16344 32.9469 16 32.9469Z" fill="#F8D24E"/>
+                    <path d="M20.4456 16.9246H17.8355V26.5455H13.8808V16.9246H12V13.5435H13.8808V11.3555C13.8808 9.79089 14.6196 7.34082 17.8707 7.34082L20.8 7.35315V10.6351H18.6746C18.3259 10.6351 17.8357 10.8104 17.8357 11.5567V13.5467H20.7911L20.4456 16.9246Z" fill="#84A178"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_123_201">
+                    <rect width="32" height="32.0077" fill="white" transform="translate(0 0.939209)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a></li>
+              </ul>
+              <div class="social-network__contact-number">
+                <span>Feel free to contact</span> +61 (0) 383 766 284
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="footer__container container">
+            <div class="made-year">© 2022 - IceCream. <br>
+              All Rights Reserved.</div>
+          </div>
+        </footer>
+      </div>
+    </body>
+  </head>
+</html>
