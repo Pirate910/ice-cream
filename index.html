@@ -5,7 +5,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&family=Seymour+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
     <title>ice cream</title>
     <body>
       <div class="wrapper">
@@ -67,14 +69,31 @@
         <main class="main">
           <section class="cream-made">
             <div class="cream-made__container container">
-              <div class="cream-made__main-block">
-                <h1 class="main-block__title">
-                  ice cream made with <span>passion</span>
-                </h1>
-                <div class="main-block__btn">
-                  <a class="products-btn__link btn__link" href="#">Products</a>
-                  <a href="#made-video_open-button" class="made-btn__link btn__link">How it’s made</a>
-                </div>             
+              <div class="cream-made__content">
+                <div class="cream-made__main-block">
+                  <h1 class="main-block__title">
+                    ice cream made with <span>passion</span>
+                  </h1>
+                  <div class="main-block__btn">
+                    <a class="products-btn__link btn__link" href="#">Products</a>
+                    <a href="#link-to_read-more" class="made-btn__link btn__link">How it’s made</a>
+                  </div>                           
+                </div>
+                <ul class="cream-made__numbers">
+                  <li class="numbers-item"><span class="numbers-item__num">16</span>
+                  cafes</li>
+                  <li class="numbers-item"><span class="numbers-item__num">23</span>
+                  food trucks</li>
+                </ul> 
+            </div>
+              <div class="cream-made__tablet">
+                <picture><img class="tablet__image" src="img/main/много мороженок 1.png" alt="0"></picture>
+                <div class="tablet__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
+                    <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#FCFCFC"/>
+                    </svg>
+                </div>
               </div>
             </div>
           </section>
@@ -96,7 +115,7 @@
                   <div class="block-item__background">
                     <img src="img/main/block-row/row-image 1.jpg" width="200" height="200" alt="">
                   </div>
-                  <div class="block-item__background-sub">                     
+                  <div class="block-item__background-sub natural-products_shadow-1">                     
                     <svg xmlns="http://www.w3.org/2000/svg" width="242" height="241" viewBox="0 0 242 241" fill="none">
                     <g filter="url(#filter0_d_123_890)">
                       <ellipse cx="120.833" cy="115.158" rx="100.166" ry="99.8422" fill="#fff"/>
@@ -118,7 +137,7 @@
                   <div class="block-item__background">
                     <img class="block-item__background-image" src="img/main/block-row/row-image 2.jpg" width="200" height="200" alt="">
                   </div>
-                  <div class="block-item__background-sub">
+                  <div class="block-item__background-sub natural-products_shadow-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="241" viewBox="0 0 241 241" fill="none">
                       <g filter="url(#filter0_d_123_893)">
                         <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#fff"/>
@@ -141,7 +160,7 @@
                   <div class="block-item__background">
                     <img class="block-item__background-image" src="img/main/block-row/row-image 3.jpg" width="200" height="200" alt="">
                   </div>
-                  <div class="block-item__background-sub">
+                  <div class="block-item__background-sub natural-products_shadow-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="241" viewBox="0 0 241 241" fill="none">
                       <g filter="url(#filter0_d_123_893)">
                         <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#fff"/>
@@ -233,13 +252,17 @@
             <div class="organic-products__container container">
               <div class="organic-products__title">tradition and love</div>
               <div class="organic-products__subtitle">how it’s made?</div>
-              <div class="organic-products__main-block main-block">
+              <div id="link-to_read-more" class="organic-products__main-block main-block">
                 <div class="main-block__block-image"><img class="main-block__image" src="img/main/organic-products/мороженко 1.jpg" width="278px" height="278px" alt=""></div>
                 <div class="main-block__block-text"><p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p> 
                   <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
                   </p>
+                  <a href="#made-video_open-button" class="submit-button organic-products-button">Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M4 2L8.94845 6L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                      
+                  </a>
                 </div>
-                <a href="#" class="submit-button">Read more</a>
               </div>
               <ul class="organic-products__consist-block consist-block">
                 <li class="consist-block__item cow-number">
@@ -290,45 +313,55 @@
           <section class="clients-block">
             <div class="clients-block__container container">
               <div class="comment-title-image"><img src="img/main/title-image.jpg" width="280" height="130" alt=""></div>
-                <div class="clients-block__comment">
-                  <div class="comment-block slider-top">
-                    <div class="comment-block__sub-image"><img src="img/main/client-block-image.png" alt=""></div>
-                    <div class="comment-block__text">I love visiting your cafe.
-                    You prepare the most delicious ice cream in Los Angeles! 
-                   In addition, you have beautiful serving, cozy atmosphere and polite staff.</div>
-                  </div>
-                  <div class="comment-block slider-middle">
-                    <div class="comment-block__sub-image"><img src="img/main/client-block-image-2.png" alt=""></div>
-                    <div class="comment-block__text">I love visiting your cafe.
-                    You prepare the most delicious ice cream in Los Angeles! 
-                   In addition, you have beautiful serving, cozy atmosphere and polite staff.</div>
-                  </div>
-                  <div class="comment-block slider-lower">
-                    <div class="comment-block__sub-image"><img src="img/main/client-block-image-3.png" alt=""></div>
-                    <div class="comment-block__text">I love visiting your cafe.
-                    You prepare the most delicious ice cream in Los Angeles! 
-                   In addition, you have beautiful serving, cozy atmosphere and polite staff.</div>
-                  </div>
-                  <div class="person-location">
-                    <div class="person-location__text">Emily, Los Angeles</div>
-                    <div class="slider-selector-row">
-                      <a href="" class="slider-selector selector_1"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="13" viewBox="0 0 72 13" fill="none">
-                        <ellipse cx="36" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
-                        </svg>
-                      <a href="" class="slider-selector selector_2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="13" viewBox="0 0 72 13" fill="none">
-                          <ellipse cx="36" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
-                          </svg>
-                      </a>
-                      <a href="" class="slider-selector selector_3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="13" viewBox="0 0 72 13" fill="none">
-                          <ellipse cx="36" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
-                          </svg>
-                      </a>
+            </div>
+            <section class="swiper">
+              <div class="swiper-container clients-info-slider">
+                <div class="swiper-wrapper" aria-live="polite" style="transform: translate3d(0px,0,0); transition-timing-function: cubic-bezier(.4,0,.2,1); transition-property: transform;
+                 transition-delay: 0ms; ">
+                  <div class="swiper-slide swiper-slide-active"role="group">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image.png"
+                     alt=""></picture>
+                    <div class="swiper-slide__text">
+                      <p>I love visiting your cafe.
+                        You prepare the most delicious ice cream in Los Angeles! 
+                        In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                    </div>
+                    <div class="swiper-slide__title">
+                      Emily, Los Angeles
                     </div>
                   </div>
+                  <div class="swiper-slide">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image-3.png"
+                      alt=""></picture>
+                     <div class="swiper-slide__text">
+                       <p>Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                       </p>
+                     </div>
+                     <div class="swiper-slide__title">
+                      Diana, Chicago
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image-2.png"
+                      alt=""></picture>
+                     <div class="swiper-slide__text">
+                       <p>I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.
+                       </p>
+                     </div>
+                     <div class="swiper-slide__title">
+                      Sam, Los Angeles
+                     </div>
+                  </div>
                 </div>
-            </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="slider-selector-row">
+                  <span class="slider-selector slider-selector-active"></span>
+                  <span class="slider-selector slider-selector-active"></span> 
+                  <span class="slider-selector slider-selector-active"></span>
+              </div>
+              </div>
+            </section>
           </section>
           <section class="work-time">
             <div class="work-time__container container">
@@ -434,12 +467,15 @@
           </section>
           <section class="social-network">
             <div class="social-network__container container">
-              <h1 class="social-network__title">
-                homemade ice cream made
-              </h1>
-              <div class="social-network__short-title">
-                with passion
+              <div class="social-network__title-block">
+                <h1 class="social-network__title">
+                  homemade ice cream made
+                </h1>
+                <div class="social-network__short-title">
+                  with passion
+                </div>
               </div>
+              <nav class="last-contact-block">
               <ul class="contacts__row">
                 <li class="contacts__item"><a class="contacts__link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                   <ellipse cx="16" cy="16.9431" rx="16" ry="16.0039" fill="#F8D24E"/>
@@ -472,7 +508,11 @@
                     </svg>
                 </a></li>
               </ul>
-              <div class="social-network__contact-number">
+              <div class="social-network__contact-number tablet-contact-row__footer">
+                <span>Feel free to contact</span> +61 (0) 383 766 284
+              </div>
+            </nav>
+              <div class="social-network__contact-number mobile-contact-row_footer">
                 <span>Feel free to contact</span> +61 (0) 383 766 284
               </div>
             </div>
@@ -486,5 +526,7 @@
         </footer>
       </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
 </html>
