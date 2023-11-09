@@ -5,7 +5,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&family=Seymour+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inconsolata:wght@200&family=Montserrat&family=Roboto&family=Roboto+Mono:wght@300&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
     <title>ice cream</title>
     <body>
       <div class="wrapper">
@@ -67,14 +69,31 @@
         <main class="main">
           <section class="cream-made">
             <div class="cream-made__container container">
-              <div class="cream-made__main-block">
-                <h1 class="main-block__title">
-                  ice cream made with <span>passion</span>
-                </h1>
-                <div class="main-block__btn">
-                  <a class="products-btn__link btn__link" href="#">Products</a>
-                  <a href="#made-video_open-button" class="made-btn__link btn__link">How it’s made</a>
-                </div>             
+              <div class="cream-made__content">
+                <div class="cream-made__main-block">
+                  <h1 class="main-block__title">
+                    ice cream made with <span>passion</span>
+                  </h1>
+                  <div class="main-block__btn">
+                    <a class="products-btn__link btn__link" href="#">Products</a>
+                    <a href="#link-to_read-more" class="made-btn__link btn__link">How it’s made</a>
+                  </div>                           
+                </div>
+                <ul class="cream-made__numbers">
+                  <li class="numbers-item"><span class="numbers-item__num">16</span>
+                  cafes</li>
+                  <li class="numbers-item"><span class="numbers-item__num">23</span>
+                  food trucks</li>
+                </ul> 
+            </div>
+              <div class="cream-made__tablet">
+                <picture><img class="tablet__image" src="img/main/много мороженок 1.png" alt="0"></picture>
+                <div class="tablet__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
+                    <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#FCFCFC"/>
+                    </svg>
+                </div>
               </div>
             </div>
           </section>
@@ -96,62 +115,154 @@
                   <div class="block-item__background">
                     <img src="img/main/block-row/row-image 1.jpg" width="200" height="200" alt="">
                   </div>
+                  <div class="block-item__background-sub natural-products_shadow-1">                     
+                    <svg xmlns="http://www.w3.org/2000/svg" width="242" height="241" viewBox="0 0 242 241" fill="none">
+                    <g filter="url(#filter0_d_123_890)">
+                      <ellipse cx="120.833" cy="115.158" rx="100.166" ry="99.8422" fill="#fff"/>
+                      <ellipse cx="120.833" cy="115.158" rx="100.166" ry="99.8422" fill="#9CBE8F" fill-opacity="0.7"/>
+                    </g>
+                  </svg></div>
                   <div class="block-item__block-text">
                     <h2 class="block-item__title">ice cream</h2>
                     <div class="block-item__text"><p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
                     </div>
                   </div>
-                  <div class="block-item__btn">
+                  <a href="#products-consist_open-button" class="block-item__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
                       <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
                       </svg>
-                  </div>
+                    </a>
                 </li>
                 <li class="natural-products__block-item block-item middle-block">
                   <div class="block-item__background">
                     <img class="block-item__background-image" src="img/main/block-row/row-image 2.jpg" width="200" height="200" alt="">
+                  </div>
+                  <div class="block-item__background-sub natural-products_shadow-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="241" height="241" viewBox="0 0 241 241" fill="none">
+                      <g filter="url(#filter0_d_123_893)">
+                        <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#fff"/>
+                        <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#F8D24E" fill-opacity="0.7"/>
+                      </g>
+                    </svg>
                   </div>
                   <div class="block-item__block-text">
                     <h3 class="block-item__title">ice coffee</h3>
                     <div class="block-item__text"><p>Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
                     </div>
                   </div>
-                  <div class="block-item__btn">
+                  <a href="#products-consist_open-button" class="block-item__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
                       <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
                       </svg>
-                  </div>
+                    </a>
                 </li >
                 <li class="natural-products__block-item block-item low-block">
                   <div class="block-item__background">
                     <img class="block-item__background-image" src="img/main/block-row/row-image 3.jpg" width="200" height="200" alt="">
-
+                  </div>
+                  <div class="block-item__background-sub natural-products_shadow-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="241" height="241" viewBox="0 0 241 241" fill="none">
+                      <g filter="url(#filter0_d_123_893)">
+                        <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#fff"/>
+                        <ellipse cx="120.834" cy="115.158" rx="99.8343" ry="99.8423" fill="#D5753F" fill-opacity="0.7"/>
+                      </g>
+                    </svg>
                   </div>
                   <div class="block-item__block-text">
                     <h4 class="block-item__title">milkshakes</h4>
                     <div class="block-item__text"><p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</p>
                     </div>
                   </div>
-                  <div class="block-item__btn">
+                  <a href="#products-consist_open-button" class="block-item__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16" viewBox="0 0 41 16" fill="none">
                       <path d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z" fill="#131313"/>
                       </svg>
-                  </div>
+                    </a>
                 </li>
               </ul>
+              <div id="products-consist_open-button" class="products-consist">
+                <div class="products-consist__container container">
+                  <a href="#products-consist_close-button" class="popup__close-button"><svg class="popup__close-button_link" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path d="M5.62687 4.99997L9.31132 1.31553C9.38413 1.23051 9.42217 1.12114 9.41785 1.00928C9.41353 0.897427 9.36716 0.791321 9.28801 0.712168C9.20886 0.633015 9.10275 0.586645 8.9909 0.582324C8.87904 0.578004 8.76967 0.616051 8.68465 0.688863L5.00021 4.37331L1.31576 0.684418C1.23207 0.600728 1.11856 0.553711 1.00021 0.553711C0.881849 0.553711 0.76834 0.600728 0.68465 0.684418C0.600959 0.768109 0.553942 0.881618 0.553942 0.999974C0.553942 1.11833 0.600959 1.23184 0.68465 1.31553L4.37354 4.99997L0.68465 8.68442C0.638124 8.72426 0.600337 8.77329 0.57366 8.82843C0.546983 8.88357 0.531992 8.94363 0.529628 9.00484C0.527264 9.06605 0.537577 9.12708 0.559922 9.18412C0.582266 9.24115 0.616158 9.29295 0.659472 9.33626C0.702785 9.37958 0.754584 9.41347 0.811617 9.43581C0.86865 9.45816 0.929687 9.46847 0.990896 9.46611C1.0521 9.46374 1.11216 9.44875 1.1673 9.42207C1.22244 9.3954 1.27147 9.35761 1.31132 9.31109L5.00021 5.62664L8.68465 9.31109C8.76967 9.3839 8.87904 9.42194 8.9909 9.41762C9.10275 9.4133 9.20886 9.36693 9.28801 9.28778C9.36716 9.20863 9.41353 9.10252 9.41785 8.99066C9.42217 8.87881 9.38413 8.76944 9.31132 8.68442L5.62687 4.99997Z" fill="#131313"/>
+                    </svg></a>
+                    <h1 class="products-consist__title">Chololate 
+                      icecream</h1>
+                    <div class="products-consist__main-image">
+                      <img src="img/main/products-consist/pexels-markus-spiske-126790 1.png" width="200"
+                      height="200" alt="">
+                    </div>
+                     <ul class="products-consist__list">
+                       <li class="products-consist__item">
+                         <div class="consist__info consist__number">320</div>
+                         <div class="consist__info consist__text">kcal</div>
+                       </li>
+                       <li class="products-consist__item">
+                         <div class="consist__info consist__number">4g</div>
+                         <div class="consist__info consist__text">Proteine</div>
+                       </li>
+                       <li class="products-consist__item">
+                         <div class="consist__info consist__number">8,2g</div>
+                         <div class="consist__info consist__text">Fats</div>
+                       </li>
+                       <li class="products-consist__item">
+                         <div class="consist__info consist__number">40,4g</div>
+                         <div class="consist__info consist__text">Carbs</div>
+                       </li>
+                    </ul>
+                    <div class="products-consist__ingridiendts">
+                      <h1 class="ingridients-title">Ingredients</h1>
+                    <ul class="products-consist__ingridiendts-menu">
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Milk</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">100ml</p>
+                      </li>
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Belgian chocolate</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">20g</p>
+                      </li>
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Cream</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">150 ml</p>
+                      </li>
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Cocoa powder</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">30g</p>
+                      </li>
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Sugar</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">40g</p>
+                      </li>
+                      <li class="ingridients-menu__item">
+                        <p class="ingridients-menu__info ingridients-menu__text">Vanilla sugar</p>
+                        <p class="ingridients-menu__info ingridients-menu__number">10g</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <form action="#" class="regist-block">
+                    <input class="regist-block__input" placeholder="Name" type="text">
+                    <input class="regist-block__input" placeholder="Phone" type="text">
+                    <textarea class="regist-block__textarea" placeholder="Comment"></textarea>
+                    <button class="submit-button">Submit</button>
+                    </form>
+                </div>
+              </div>
             </div>
           </section>
           <section class="organic-products">
             <div class="organic-products__container container">
               <div class="organic-products__title">tradition and love</div>
               <div class="organic-products__subtitle">how it’s made?</div>
-              <div class="organic-products__main-block main-block">
+              <div id="link-to_read-more" class="organic-products__main-block main-block">
                 <div class="main-block__block-image"><img class="main-block__image" src="img/main/organic-products/мороженко 1.jpg" width="278px" height="278px" alt=""></div>
                 <div class="main-block__block-text"><p>Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p> 
                   <p>We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
                   </p>
+                  <a href="#made-video_open-button" class="submit-button organic-products-button">Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M4 2L8.94845 6L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                      
+                  </a>
                 </div>
-                <a href="#" class="submit-button">Read more</a>
               </div>
               <ul class="organic-products__consist-block consist-block">
                 <li class="consist-block__item cow-number">
@@ -201,24 +312,56 @@
           </section>
           <section class="clients-block">
             <div class="clients-block__container container">
-              <div class="clients-block__comment">
-                <div class="comment-title-image"><img src="img/main/title-image.jpg" width="280" height="130" alt=""></div>
-                <div class="comment-block">
-                  <div class="comment-block__sub-image"><img src="img/main/client-block-image.png" alt=""></div>
-                  <div class="comment-block__text">I love visiting your cafe.
-                    You prepare the most delicious ice cream in Los Angeles! 
-                   In addition, you have beautiful serving, cozy atmosphere and polite staff.</div>
-                </div>
-                <div class="comment-block__person-location">
-                  <div class="person-location__text">Emily, Los Angeles</div>
-                  <div class="person-location__icon"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="13" viewBox="0 0 72 13" fill="none">
-                    <ellipse cx="6" cy="6.53416" rx="6" ry="6.00145" fill="#84A178"/>
-                    <ellipse cx="36" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
-                    <ellipse cx="66" cy="6.53416" rx="6" ry="6.00145" fill="#D9D9D9"/>
-                    </svg></div>
-                </div>
-              </div>
+              <div class="comment-title-image"><img src="img/main/title-image.jpg" width="280" height="130" alt=""></div>
             </div>
+            <section class="swiper">
+              <div class="swiper-container clients-info-slider">
+                <div class="swiper-wrapper" aria-live="polite" style="transform: translate3d(0px,0,0); transition-timing-function: cubic-bezier(.4,0,.2,1); transition-property: transform;
+                 transition-delay: 0ms; ">
+                  <div class="swiper-slide swiper-slide-active"role="group">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image.png"
+                     alt=""></picture>
+                    <div class="swiper-slide__text">
+                      <p>I love visiting your cafe.
+                        You prepare the most delicious ice cream in Los Angeles! 
+                        In addition, you have beautiful serving, cozy atmosphere and polite staff.</p>
+                    </div>
+                    <div class="swiper-slide__title">
+                      Emily, Los Angeles
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image-3.png"
+                      alt=""></picture>
+                     <div class="swiper-slide__text">
+                       <p>Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                       </p>
+                     </div>
+                     <div class="swiper-slide__title">
+                      Diana, Chicago
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><img class="swiper-slide__photo" src="img/main/client-block-image-2.png"
+                      alt=""></picture>
+                     <div class="swiper-slide__text">
+                       <p>I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to everyone I know.
+                       </p>
+                     </div>
+                     <div class="swiper-slide__title">
+                      Sam, Los Angeles
+                     </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="slider-selector-row">
+                  <span class="slider-selector slider-selector-active"></span>
+                  <span class="slider-selector slider-selector-active"></span> 
+                  <span class="slider-selector slider-selector-active"></span>
+              </div>
+              </div>
+            </section>
           </section>
           <section class="work-time">
             <div class="work-time__container container">
@@ -311,7 +454,7 @@
                     <div class="franchise-page__text">
                       <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
                     </div>
-                    <form action="#" class="franchise-page__register-form">
+                    <form action="#" class="franchise-page__register-form regist-block">
                       <input placeholder="Name" type="text" id="name">
                       <input placeholder="Phone" type="text" id="phone">
                       <input placeholder="Email" type="text" id="email">
@@ -324,12 +467,15 @@
           </section>
           <section class="social-network">
             <div class="social-network__container container">
-              <h1 class="social-network__title">
-                homemade ice cream made
-              </h1>
-              <div class="social-network__short-title">
-                with passion
+              <div class="social-network__title-block">
+                <h1 class="social-network__title">
+                  homemade ice cream made
+                </h1>
+                <div class="social-network__short-title">
+                  with passion
+                </div>
               </div>
+              <nav class="last-contact-block">
               <ul class="contacts__row">
                 <li class="contacts__item"><a class="contacts__link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                   <ellipse cx="16" cy="16.9431" rx="16" ry="16.0039" fill="#F8D24E"/>
@@ -362,7 +508,11 @@
                     </svg>
                 </a></li>
               </ul>
-              <div class="social-network__contact-number">
+              <div class="social-network__contact-number tablet-contact-row__footer">
+                <span>Feel free to contact</span> +61 (0) 383 766 284
+              </div>
+            </nav>
+              <div class="social-network__contact-number mobile-contact-row_footer">
                 <span>Feel free to contact</span> +61 (0) 383 766 284
               </div>
             </div>
@@ -376,5 +526,7 @@
         </footer>
       </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </head>
 </html>
